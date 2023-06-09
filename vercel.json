@@ -1,0 +1,25 @@
+{
+  "builds": [
+    {
+      "src": "recipe-reader-settings/wsgi.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "build_staticfiles.sh",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "staticfiles_build"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "recipe-reader-settings/wsgi.py"
+    }
+  ]
+}
