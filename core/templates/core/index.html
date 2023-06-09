@@ -7,13 +7,67 @@
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
 </head>
 <body>
 
-    <header></header>
-    <main>Bora</main>
-    <footer></footer>
+<header>
+    <h1>Oi, amor! Esse ano meu cartão vai ser em forma de site</h1>
+    <h3>Um pouco perdido no conceito, mas por você eu viro front-end &#9829;</h3>
+</header>
+<main>
 
+    <div class="text-main">
+        <h3>Lá vamos nós</h3>
+        <p>Ora, ora, estamos no <b>SEGUNDO</b> dia dos namorados juntos (Na verdade eu planejo mostrar tudo antes) e
+            olhe... teve muita coisa esse ano. Se antes eu falei sobre as primeiras vezes, dessa vez eu quero agradecer
+            pelas coisas que aconteceram bem mais do que uma vez, as coisas que se repetem e as coisas que sempre vão
+            acontecer.</p>
+
+        <h3>Então para abrir esse grande evento</h3>
+
+        <img class="images" src="{% static 'img/vai_ser_arte.jpeg' %}">
+
+        <img class="images" src="{% static 'img/viagem.jpeg' %}">
+
+        <img class="images" src="{% static 'img/eventos.jpeg' %}">
+
+        <p>Na sequência vem algo que não se repetiu, a foto do apagão. Mas isso não é o que quero destacar, e sim a
+            felicidade em qualquer momento, estando junto de ti, sei que serei feliz e que tentarei te fazer feliz</p>
+        <img class="images" src="{% static 'img/apagao.jpeg' %}">
+
+        <img class="images" src="{% static 'img/sonin.jpeg' %}">
+
+        <img class="images" src="{% static 'img/chill.jpeg' %}">
+
+        <img class="images" src="{% static 'img/arte.jpeg' %}">
+
+        <img class="images" src="{% static 'img/crime.jpeg' %}">
+
+    </div>
+
+</main>
+<footer>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <h3>Feito por esse cara aqui:</h3>
+            <div class="image-wrapper">
+                <img class="authors" src="{% static 'img/matheus.png' %}" alt="Imagem do Matheus">
+            </div>
+        </div>
+
+        <div class="grid-item">
+            <h3>Que namora essa gata aqui:</h3>
+            <div class="image-wrapper">
+                <img class="authors" src="{% static 'img/dudinha.png' %}" alt="Imagem da Dudinha">
+            </div>
+        </div>
+    </div>
+    <p id="fim">11 de Junho de 2023. Todos os direitos reservados.</p>
+
+
+</footer>
 </body>
 </html>
