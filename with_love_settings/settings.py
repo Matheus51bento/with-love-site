@@ -73,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'with_love_settings.wsgi.application'
+WSGI_APPLICATION = 'with_love_settings.wsgi.app'
 
 
 # Database
