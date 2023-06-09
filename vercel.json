@@ -1,7 +1,7 @@
 {
   "builds": [
     {
-      "src": "recipe-reader-settings/wsgi.py",
+      "src": "with_love_settings/wsgi.py",
       "use": "@vercel/python"
     },
     {
@@ -19,7 +19,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "recipe-reader-settings/wsgi.py"
+      "dest": "with_love_settings/wsgi.py"
     }
   ]
 }
