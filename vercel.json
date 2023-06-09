@@ -1,25 +1,23 @@
 {
-  "builds": [
-    {
-      "src": "with_love_settings/wsgi.py",
-      "use": "@vercel/python"
-    },
-    {
-      "src": "build_staticfiles.sh",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "staticfiles_build"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/static/(.*)",
-      "dest": "/static/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "with_love_settings/wsgi.py"
-    }
-  ]
+    "builds": [{
+        "src": "build_staticfiles.sh",
+        "use": "@vercel/static-build@1.0.34",
+        "config": {
+          "distDir": "staticfiles_build"
+        }
+      },
+      {
+        "src": "with_love_settings/wsgi.py",
+        "use": "@vercel/python"
+    }],
+    "routes": [
+        {
+            "src": "/static/(.*)",
+            "dest": "/static/$1"
+          },
+        {
+            "src": "/(.*)",
+            "dest": "with_love_settings/wsgi.py"
+        }
+    ]
 }
