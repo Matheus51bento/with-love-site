@@ -22,9 +22,9 @@ p {
     width: 700px;
     margin: auto;
     padding: 50px 0;
-      /*display: flex;*/
-  justify-content: center;
-  align-items: center;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
 }
 
 header {
@@ -51,8 +51,19 @@ footer {
 
 .images {
     max-width: 500px;
-    margin: auto;
+    margin: 10px auto 15px auto;
     display: block;
+}
+
+.container {
+    margin: 15px 0;
+    display: flex;
+}
+
+.container img {
+    max-width: 300px;
+    height: auto;
+    margin: auto;
 }
 
 .authors {
@@ -78,15 +89,19 @@ footer {
 }
 
 .image-wrapper img {
-    min-height: 150px;
+    min-height: 132px;
     min-width: 132px;
 
-    max-height: 180px;
+    max-height: 162px;
     max-width: 162px;
 }
 
 @media (max-width: 600px) {
     .grid-container {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .container img {
+        max-width: 90%;
     }
 }
